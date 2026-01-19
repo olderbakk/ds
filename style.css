@@ -22,7 +22,7 @@ body {
 
 .hero {
     min-height: 100vh;
-    background-image: url('images/bakgrunn.jpg');
+    background-image: url('images/lofoten.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
