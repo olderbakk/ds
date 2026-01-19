@@ -1,8 +1,8 @@
-:root {
-    --bg: #ffffff;
-    --text: #000000;
-    --text-muted: #666666;
-    --border: #e0e0e0;
+@font-face {
+    font-family: 'ABC Diatype';
+    src: url('fonts/ABCDiatype Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
 }
 
 * {
@@ -11,127 +11,57 @@
     box-sizing: border-box;
 }
 
-html {
-    font-size: 18px;
+html, body {
+    height: 100%;
 }
 
 body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    line-height: 1.6;
+    font-family: 'ABC Diatype', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #fff;
+}
+
+.hero {
     min-height: 100vh;
+    background-image: url('hero.jpg');
+    background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
-}
-
-a {
-    color: var(--text);
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Header */
-.header {
-    padding: 2.5rem 2rem;
-    text-align: center;
-}
-
-.logo {
-    font-size: 1.25rem;
-    font-weight: 400;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-}
-
-/* Main */
-.main {
-    flex: 1;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 2rem;
-    width: 100%;
-}
-
-.page-title {
-    font-size: 2.5rem;
-    font-weight: 400;
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-/* Section Navigation */
-.section-nav {
-    display: flex;
     justify-content: center;
-    gap: 2rem;
-    margin-bottom: 3rem;
-    flex-wrap: wrap;
+    padding: 3rem;
 }
 
-.section-nav a {
-    font-size: 1.1rem;
+.hero-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-/* Sections */
-.section {
-    margin-bottom: 3rem;
-}
-
-.section h2 {
-    font-size: 1.5rem;
+.title {
+    font-size: clamp(3rem, 8vw, 5rem);
     font-weight: 400;
-    text-align: center;
-    margin-bottom: 1.5rem;
-}
-
-.section-content {
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-.section-content p {
+    line-height: 1.1;
     margin-bottom: 1rem;
 }
 
-.section-content a {
-    text-decoration: underline;
+.tagline {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-weight: 400;
+    opacity: 0.9;
 }
 
-/* Footer */
 .footer {
-    padding: 2rem;
-    text-align: center;
     margin-top: auto;
 }
 
 .footer p {
-    font-size: 0.85rem;
-    color: var(--text-muted);
+    font-size: 0.875rem;
+    opacity: 0.8;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
-    html {
-        font-size: 16px;
-    }
-    
-    .header {
-        padding: 1.5rem 1rem;
-    }
-    
-    .nav {
-        gap: 0.5rem 1.5rem;
-    }
-    
-    .main {
-        padding: 1.5rem;
-    }
-    
-    .section-nav {
-        gap: 1rem;
+    .hero {
+        padding: 2rem;
     }
 }
