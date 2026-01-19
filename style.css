@@ -40,22 +40,10 @@ a:hover {
     text-align: center;
 }
 
-.nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.5rem 2rem;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.nav a {
-    font-size: 1.1rem;
+.logo {
+    font-size: 1.25rem;
     font-weight: 400;
-}
-
-.nav a.active {
-    text-decoration: underline;
+    letter-spacing: 0.02em;
 }
 
 /* Main */
