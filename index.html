@@ -7,32 +7,50 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="grain"></div>
-    
     <header class="header">
         <nav class="nav">
-            <a href="/" class="logo">DS</a>
-            <ul class="nav-links">
-                <li><a href="#">Om</a></li>
-                <li><a href="#">Kontakt</a></li>
-            </ul>
+            <a href="/">Forside</a>
+            <a href="#">Tidsskrift</a>
+            <a href="#">Seminar og faginnlegg</a>
+            <a href="#">Undervisning</a>
+            <a href="#">Utredning og analyse</a>
+            <a href="#">Prosjekter</a>
+            <a href="#" class="active">Om oss</a>
         </nav>
     </header>
 
-    <main class="hero">
-        <div class="hero-content">
-            <p class="hero-label">Tidsskrift</p>
-            <h1 class="hero-title">DS</h1>
-            <p class="hero-tagline">Perspektiver på kultur, samfunn og ideer</p>
-            <div class="hero-cta">
-                <a href="#" class="btn btn-primary">Les første utgave</a>
-                <a href="#" class="btn btn-secondary">Abonner</a>
+    <main class="main">
+        <h1 class="page-title">Om oss</h1>
+
+        <nav class="section-nav">
+            <a href="#om-foreningen">Om foreningen ↓</a>
+            <a href="#kontakt">Kontakt ↓</a>
+            <a href="#media">Media ↓</a>
+        </nav>
+
+        <section id="om-foreningen" class="section">
+            <h2>Om foreningen</h2>
+            <div class="section-content">
+                <p>DS jobber for å drive frem en kritisk og konstruktiv samtale om kultur, samfunn og ideer. Foreningens arbeid inkluderer utgivelsen av tidsskriftet med samme navn, seminarer, forelesninger, rådgivning og formidling.</p>
+                <p>I tillegg til å undersøke følgene av de siste tiårenes kulturelle utvikling, deler vi andre lands løsninger, og formidler gode referanseprosjekter til politikere, fagfolk, interesseorganisasjoner, fagforeninger og fellesskaper.</p>
+                <p>Vi har som langsiktig mål å bidra til en bredere offentlig samtale i Norge.</p>
             </div>
-        </div>
-        
-        <div class="hero-info">
-            <p>Utgave 01 — Vår 2026</p>
-        </div>
+        </section>
+
+        <section id="kontakt" class="section">
+            <h2>Kontakt</h2>
+            <div class="section-content">
+                <p>For henvendelser, kontakt oss på:</p>
+                <p><a href="mailto:post@ds.no">post@ds.no</a></p>
+            </div>
+        </section>
+
+        <section id="media" class="section">
+            <h2>Media</h2>
+            <div class="section-content">
+                <p>Pressemateriale og logoer kan lastes ned her.</p>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
